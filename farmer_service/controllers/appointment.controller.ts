@@ -192,7 +192,7 @@ export const cancelAppointment = async (req: BookAppointment, res: Response): Pr
 
     // Step 2: Notify payment service for refund
     try {
-      await axios.post('http://localhost:5008/api/payment/refund', {
+      await axios.post('http://localhost:5011/pay/api/payment/refund', {
         farmer_id: updatedAppointment.farmer_id,
         appointment_id: updatedAppointment._id,
         // amount: updatedAppointment.amountPaid, // optional

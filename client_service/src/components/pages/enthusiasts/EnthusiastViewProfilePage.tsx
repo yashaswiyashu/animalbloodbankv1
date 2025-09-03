@@ -93,7 +93,7 @@ const { name } = location.state || {};
               {images.map((img) => (
                 <div className="image-item" key={img._id}>
                   <img
-                    // src={`http://localhost:5000${img.imageUrl}`}
+                    // src={`http://${img.imageUrl}`}
                     src={`${process.env.REACT_APP_MEDIA_URL}${img.imageUrl}`}
                     alt="Uploaded"
                     style={{

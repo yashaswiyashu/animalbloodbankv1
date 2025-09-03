@@ -151,7 +151,7 @@ export const assignMatchedDonors = async (req: Request, res: Response) => {
     // Fetch full donor details from admin service
     const donorDetails = await Promise.all(
       matchedDonors.map(async (donorId: string) => {
-        const { data } = await axios.get(`http://localhost:5007/api/donor/by-id/${donorId}`);
+        const { data } = await axios.get(`http://localhost:5011/admin/api/donor/by-id/${donorId}`);
         return data;
       })
     );
