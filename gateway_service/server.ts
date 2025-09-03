@@ -67,7 +67,7 @@ app.use("/video", createProxyMiddleware({
 }));
 
 app.use("/media", createProxyMiddleware({
-  target: "http://localhost:5011/media",
+  target: "https://server.pranimithra.in/media",
   changeOrigin: true,
   pathRewrite: { "^/media": "" }
 }));

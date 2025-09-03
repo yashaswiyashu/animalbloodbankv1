@@ -5,7 +5,7 @@ let socket: any = null;
 // Initialize socket if not already created
 const getSocket = () => {
   if (!socket) {
-    socket = io("http://localhost:5011/video", {
+    socket = io("https://server.pranimithra.in/video", {
         reconnection: true,
         transports: ['websocket']
     });
