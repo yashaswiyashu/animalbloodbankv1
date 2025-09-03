@@ -3,6 +3,9 @@ import { createProxyMiddleware } from "http-proxy-middleware";
 
 const app = express();
 
+app.get('/', (req, res) => {
+  res.send('Hello from the homepage!');
+});
 
 // Proxy to app3 running on port 4003
 app.use("/auth", createProxyMiddleware({
