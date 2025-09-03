@@ -1,0 +1,2 @@
+npm install @emotion/react @emotion/styled @mui/icons-material @mui/material axios buffer moment moment-timezone react-big-calendar react-icons react-modal react-router-dom react-select simple-peer socket.io-client process
+npm install -D @types/react-big-calendar @types/react-modal @types/simple-peer typescript

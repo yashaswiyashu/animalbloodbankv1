@@ -1,0 +1,36 @@
+.top-bar {
+  background-color: #0d0d0d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 20px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.top-left span {
+  margin-right: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.follow-btn {
+  background-color: #e3072b;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  cursor: pointer;
+}
+
+.social-icons svg {
+  margin: 0 6px;
+  color: white;
+  cursor: pointer;
+}

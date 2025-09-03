@@ -1,0 +1,134 @@
+.newsletter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #f0f8ff, #ffe3e4);
+  padding: 50px 20px;
+}
+
+.newsletter-content {
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 40px 30px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  transition: all 0.4s ease;
+  animation: fadeIn 1s ease;
+}
+
+.newsletter-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-content h1 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #174350;
+}
+
+.newsletter-content p {
+  margin-bottom: 25px;
+  color: #555;
+  font-size: 1rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+  animation: fadeInUp 1s ease;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+input,
+select {
+  /* width: 100%; */
+  padding: 12px 14px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  background-color: white;
+  color: #333;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #00A8A8;
+  box-shadow: 0 0 8px rgba(0, 168, 168, 0.3);
+  outline: none;
+}
+
+.subscribe-button {
+  background-color: #00A8A8;
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.35s ease;
+  width: 100%;
+  box-shadow: 0 4px 14px rgba(0, 168, 168, 0.3);
+}
+
+.subscribe-button:hover {
+  background-color: #007e7e;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 22px rgba(0, 168, 168, 0.4);
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.subscribe-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile adjustments */
+
+@media (max-width: 600px) {
+  .newsletter-content {
+    padding: 30px 20px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .subscribe-button {
+    font-size: 0.95rem;
+  }
+}

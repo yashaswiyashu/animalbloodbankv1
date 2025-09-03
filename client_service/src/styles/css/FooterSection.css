@@ -1,0 +1,138 @@
+.gradient {
+  background: linear-gradient(90deg, #F76148, #244751);
+  height: 5vh;
+  width: 100%;
+}
+
+.footer {
+  color: white;
+  padding: 50px 20px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #244751;
+  position: relative;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+  margin-bottom: 30px;
+  animation: fadeInUp 1s ease;
+}
+
+.footer-section h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #F76148;
+  position: relative;
+}
+
+.footer-section h3::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #F76148;
+  margin-top: 8px;
+  border-radius: 2px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin: 8px 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-section li:hover {
+  color: #00A8A8;
+}
+
+.footer-section p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: row;
+    /* align-items: center;
+    text-align: center; */
+    /* align-content: center; */
+  }
+
+  .footer-section {
+    margin-bottom: 25px;
+    
+  }
+
+  .footer-section h3 {
+    margin-top: 15px;
+    /* display: none; */
+  }
+  .footer-section h3::after {
+    display: none;
+  }
+}
+
+@media(max-width: 425px){
+  .footer{
+    /* flex-direction: row; */
+    padding:0px 20px;
+  }
+  .footer-section{
+    margin: 0px;
+  }
+  .footer-section ul{
+    margin: 0px;
+    
+  }
+  .footer-section li{
+    margin: 0px;
+    text-align: center;
+  }
+  .footer-section h3{
+    text-align: center;
+  }
+  .footer-section p{
+    text-align: center;
+  }
+}
+

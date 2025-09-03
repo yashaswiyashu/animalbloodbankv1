@@ -1,0 +1,186 @@
+.how-it-works {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(180deg, #f0f8ff, #ffe3e4);
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  /* max-width: 80vw; */
+  align-items: flex-start;
+
+}
+
+.step {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 15%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: fit-content;
+  transition: all 0.35s ease;
+  transform: translateY(0);
+}
+
+/* Hover effect */
+.step:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2),
+              0 0 30px rgba(0, 168, 168, 0.2); /* subtle teal glow */
+}
+
+/* Optional: smooth transition on inner text/icon color or scale if needed */
+.step * {
+  transition: all 0.3s ease;
+}
+
+.icon-person {
+  font-size: 2rem;
+  background-color: #F76148;
+  color: white;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+}
+
+.icon-search {
+  font-size: 2rem;
+  background-color: #00A8A8 ;
+  color: white;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+}
+.icon-calendar {
+  font-size: 2rem;
+  background-color: #8ECBDE;
+  color: white;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+}
+.icon-chart {
+  font-size: 2rem;
+  background-color: #174350;
+  color: white;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  color: #4a4a4a;
+}
+
+.add-animal {
+    margin-left: -2.3rem;
+}
+
+h4 {
+    margin-top: -1rem;
+    margin-bottom: -0.7rem;
+    max-width: 15rem;
+    /* margin-left: ; */
+  /* margin: 1rem 0; */
+  font-size: 1.5rem;
+}
+
+.step-desc {
+    justify-content: left;
+    text-align: left;
+    color: #4B5563;
+}
+
+.step p{
+    color: #6B7280;
+}
+/* p{
+    justify-content: left;
+} */
+
+.join-button {
+  background-color: #F76148;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  box-shadow: 0 4px 10px rgba(247, 97, 72, 0.3);
+}
+
+/* Hover effect */
+.join-button:hover {
+  background-color: #e65039; /* deeper, richer orange */
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(247, 97, 72, 0.4);
+}
+
+/* Active (click) effect */
+.join-button:active {
+  transform: translateY(0) scale(1);
+  box-shadow: 0 4px 10px rgba(247, 97, 72, 0.3);
+}
+
+/* Optional inner content transition if button has icons or text spans */
+.join-button * {
+  transition: all 0.3s ease;
+}
+
+.join-section {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1024px){
+  .step{
+    padding: 3rem;
+  }
+}
+
+@media(max-width: 768px){
+  .step{
+    width: 30%;
+  }
+}
+
+@media(max-width:705px){
+  .step{
+    width: 60%;
+  }
+}
+
+@media(max-width: 425px){
+  .step{
+    width: 80%
+  }
+}

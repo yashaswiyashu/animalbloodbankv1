@@ -1,0 +1,90 @@
+.trusted-organizations {
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(180deg, #f0f8ff, #ffe3e4);
+}
+
+.trusted-organizations h2 {
+  font-size: 2rem;
+  color: #d5006d;
+  margin-bottom: 10px;
+}
+
+.trusted-organizations p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.organization-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 20px;
+}
+
+.organization-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  width: 18rem;
+  text-align: center;
+  transition: all 0.4s ease;
+  transform: translateY(0);
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.organization-card:nth-child(1) { animation-delay: 0.1s; }
+.organization-card:nth-child(2) { animation-delay: 0.2s; }
+.organization-card:nth-child(3) { animation-delay: 0.3s; }
+/* if more cards — no issue, they'll fade in sequentially */
+
+.organization-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+  width: 9rem;
+  height: auto;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.organization-card:hover .logo {
+  transform: rotate(-3deg) scale(1.05);
+}
+
+.organization-card h2 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.type {
+  font-weight: 600;
+  color: #009688;
+  font-size: 0.95rem;
+  margin-top: 5px;
+}
+
+.description {
+  font-size: 0.85rem;
+  color: #999;
+  margin-top: 10px;
+}
+
+/* Entry animation */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

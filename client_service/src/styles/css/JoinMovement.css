@@ -1,0 +1,151 @@
+.hero-section {
+  text-align: center;
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+.hero-content {
+  margin-bottom: 30px;
+  background-image: url("../../components/assets/bg-join.png");
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1.2s ease;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.register-button,
+.partner-button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.4s ease;
+}
+
+.register-button {
+  background-color: #ff6347;
+  color: white;
+  box-shadow: 0 4px 14px rgba(255, 99, 71, 0.4);
+}
+
+.partner-button {
+  background-color: transparent;
+  border: 2px solid #00A8A8;
+  color: white;
+  box-shadow: 0 4px 14px rgba(0, 168, 168, 0.3);
+}
+
+.heart {
+  color: #00A8A8;
+}
+
+.register-button:hover {
+  background-color: #e5533d;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(255, 99, 71, 0.5);
+}
+
+.partner-button:hover {
+  background-color: #f0f0f0;
+  color: black;
+  border-color: #f0f0f0;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.benefits {
+  margin-top: 50px;
+  padding: 0 20px;
+}
+
+.benefits h2 {
+  font-size: 2rem;
+  color: #d5006d;
+  margin-bottom: 30px;
+  animation: fadeInUp 1s ease;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.benefit {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  animation: fadeInUp 1s ease;
+}
+
+.benefit:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.benefit h3 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.benefit p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media(max-width: 425px){
+  h1{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .buttons{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}

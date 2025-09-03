@@ -1,0 +1,21 @@
+/* Increase row height in Day View */
+.rbc-timeslot-group {
+    height: 100rem !important;
+  }
+  
+  /* Optionally, adjust time gutter width if needed */
+  .rbc-time-gutter {
+    width: 80px !important;
+    height: 62.5rem !important;
+  }
+  .cal-responsive {
+  height: 2000px;
+  margin-top: 20px;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .cal-responsive {
+    height: 500px;
+  }
+}

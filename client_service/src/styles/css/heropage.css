@@ -1,0 +1,172 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../../assets/abb_bgg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  /* width: 100%; */
+  color: white;
+  /* padding: 20px; */
+  text-align: center;
+}
+
+.content {
+  max-width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  margin-right: 50rem;
+  margin-top: -10rem;
+}
+
+.content h1 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.buttons-hero {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.find-donor {
+  background-color: #00A8A8;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.find-donor:hover {
+  background-color: #008080; /* Darker Teal */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 168, 168, 0.4);
+}
+
+/* ------------------------------------- */
+
+.become-donor {
+  background-color: #F76148;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.become-donor:hover {
+  background-color: #d64530; /* Deeper Orange */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(247, 97, 72, 0.4);
+}
+
+/* ------------------------------------- */
+
+.book-appointment {
+  color: #D32D50;
+  background-color: transparent;
+  border: 2px solid #D32D50;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.book-appointment:hover {
+  background-color: #D32D50;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(211, 45, 80, 0.4);
+}
+
+
+
+@media( max-width: 1230px){
+.container{
+  width: 100vw;
+  height: 100vh;
+}
+/* .content h1{
+  margin-left: 2rem !important;
+} */
+
+.content{
+  margin-right:35rem ;
+}
+}
+
+@media (max-width: 1024px){
+.container{
+  width: 100vw !important;
+}
+.content{
+  margin-right: 20rem;
+  margin-left: 1rem;
+}
+}
+
+@media(max-width: 768px){
+  .content{
+    margin-right: 10rem;
+    margin-left: 2rem;
+  }
+
+  .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../../assets/bannar_768_2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  /* width: 100%; */
+  color: white;
+  /* padding: 20px; */
+  text-align: center;
+}
+
+.content h1{
+  margin-top: 7rem;
+}
+  
+}
+
+@media(max-width:500px){
+  .content{
+    margin-right: 5rem;
+  }
+}
+
+@media(max-width: 425px){
+  .content h1{
+    font-size: 2.5rem;
+  }
+  .content{
+    margin-right: 2rem;
+  }
+}
