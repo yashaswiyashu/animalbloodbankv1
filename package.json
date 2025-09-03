@@ -14,7 +14,7 @@
     "start:admin": "cd admin_service && npm run dev",
     "start:payment": "cd payment_service && npm run dev",
     "start:video-call": "cd video_call_service && npm run dev",
-    "start:media": "cd media-service && npm run dev",
+    "start:media": "cd media_service && npm run dev",
     "start:client-dev": "cd client_service && npm i --legacy-peer-deps",
     "start:auth-dev": "cd auth_service && npm i",
     "start:doctor-dev": "cd doctor_service && npm i",
@@ -26,7 +26,7 @@
     "start:admin-dev": "cd admin_service && npm i",
     "start:payment-dev": "cd payment_service && npm i",
     "start:video-call-dev": "cd video_call_service && npm i",
-    "start:media-dev": "cd media-service && npm i",
+    "start:media-dev": "cd media_service && npm i",
     "nodemodule": "concurrently \"npm run start:client-dev\" \"npm run start:auth-dev\" \"npm run start:doctor-dev\" \"npm run start:farmer-dev\" \"npm run start:hospital-dev\" \"npm run start:organization-dev\" \"npm run start:vendor-dev\" \"npm run start:animal-enthusiast-dev\" \"npm run start:admin-dev\" \"npm run start:payment-dev\" \"npm run start:video-call-dev\" \"npm run start:media-dev\" ",
     "start": "concurrently \"npm run start:client\" \"npm run start:auth\" \"npm run start:doctor\" \"npm run start:farmer\" \"npm run start:hospital\" \"npm run start:organization\" \"npm run start:vendor\" \"npm run start:animal-enthusiast\" \"npm run start:admin\" \"npm run start:payment\" \"npm run start:video-call\" \"npm run start:media\""
   },
