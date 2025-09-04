@@ -38,6 +38,8 @@
   "description": "",
   "dependencies": {
     "@types/axios": "^0.9.36",
+    "ajv": "^6.12.6",
+    "ajv-keywords": "^3.5.2",
     "axios": "^1.9.0",
     "concurrently": "^9.1.2",
     "form-data": "^4.0.4",
