@@ -7,7 +7,12 @@ import path from "path";
 dotenv.config();
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: process.env.CORS_URL,  // your frontend origin
+  credentials: true,                // allow credentials (cookies, auth headers)
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 app.use(express.json());
 
 // Static folder for uploaded images
