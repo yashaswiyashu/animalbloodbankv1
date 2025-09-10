@@ -83,6 +83,8 @@ export const addAnimal = async (req: AddAnimalReq, res: Response) => {
       pin_code,
       praniAadharNumber,
     };
+    console.log("i am here");
+    
 
     // ⬇️ Image Upload to Media Service
     if (req.file) {
